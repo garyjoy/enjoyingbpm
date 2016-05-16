@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamworks>
+    <managedAsset id="61.b7e837d6-81df-4794-bec1-000b85e20853" name="feedback.png">
+        <lastModified>1463393396094</lastModified>
+        <lastModifiedBy>admin</lastModifiedBy>
+        <managedAssetId>61.b7e837d6-81df-4794-bec1-000b85e20853</managedAssetId>
+        <assetUuid>19c0b51f-c1b3-47e9-9f6d-fc01414ce675</assetUuid>
+        <mimeType>image/png</mimeType>
+        <charEncoding isNull="true" />
+        <assetTypeCode>W</assetTypeCode>
+        <length>6607</length>
+        <localLastModification>1463262499000</localLastModification>
+        <description>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-SIZE: 10pt; FONT-FAMILY: arial" bgColor=#f5f5f5&gt;&#xD;
+&lt;P&gt;A 75 x 75&amp;nbsp;image for the Feedback custom Coach View. &lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;</description>
+        <isDocumentationFile>false</isDocumentationFile>
+        <guid>4992f886-6deb-4d4a-a0a6-20302e69c593</guid>
+        <versionId>5bbbfcf9-e65a-4371-aefe-b96462ce4ae2</versionId>
+    </managedAsset>
+</teamworks>
+

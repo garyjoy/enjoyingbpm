@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamworks>
+    <managedAsset id="61.47fdaf7b-f1c8-4079-9de2-85071e47da61" name="AMD.js">
+        <lastModified>1463393548959</lastModified>
+        <lastModifiedBy>admin</lastModifiedBy>
+        <managedAssetId>61.47fdaf7b-f1c8-4079-9de2-85071e47da61</managedAssetId>
+        <assetUuid>9620f184-79b9-44fc-819c-2b9f77c9a350</assetUuid>
+        <mimeType>application/javascript</mimeType>
+        <charEncoding isNull="true" />
+        <assetTypeCode>W</assetTypeCode>
+        <length>182</length>
+        <localLastModification>1463241603000</localLastModification>
+        <description>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-SIZE: 10pt; FONT-FAMILY: arial" bgColor=#f5f5f5&gt;&#xD;
+&lt;P&gt;Includes the latest versions of jQuery (2.2.3) and jQuery UI (1.11.4). &lt;/P&gt;&lt;BR&gt;&#xD;
+&lt;P&gt;&lt;A href="https://en.wikipedia.org/wiki/Asynchronous_module_definition" target="_blank"&gt;https://en.wikipedia.org/wiki/Asynchronous_module_definition&lt;/A&gt; &lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;</description>
+        <isDocumentationFile>false</isDocumentationFile>
+        <guid>47e59642-d5d5-4138-ab67-41bd935a69db</guid>
+        <versionId>65c019d3-ea93-4c12-a25f-1b36abdb0e20</versionId>
+    </managedAsset>
+</teamworks>
+

@@ -1,0 +1,178 @@
+/**
+
+############################################################################
+#   Server Side File - Adds logging functions to the Joy framework.        #
+############################################################################
+
+TODO:
+
+#1) Get the following values directly from tw.system (i.e. remove redundant
+    parameters).
+
+    tw.system.currentProcessInstanceID
+    tw.system.user_id
+    tw.system.user_loginName
+    tw.system.user_fullName
+    tw.system.currentProcess.id
+    tw.system.currentProcess.name
+    tw.system.currentTask.id
+    tw.system.currentTask.subject
+    tw.system.currentTask.narrative
+    tw.system.currentTask.dueDate
+    tw.system.currentTask.priority
+    tw.system.currentTask.status
+    tw.system.currentTask.assignedTo
+    tw.system.currentTask.processInstance.id
+    tw.system.currentTask.processInstance.name
+    tw.system.currentTask.processInstance.process.id
+    tw.system.currentTask.processInstance.process.name
+    tw.system.model.processApp.acronym
+
+#2) All the log methods logically do the same thing. Therefore, there's a lot of 
+    redundant code, that SHOULD be refactored into a generic log method.
+    
+    e.g.
+    
+    _joy.log = function(keyValueParamsObject){
+        var logThis = '';
+        for (each key in keyValueParamsObject){
+            logThis += ' ' + key + _joy.wrapInQuotes(keyValueParamsObject[key]);
+        };
+        log.error(logThis);
+    };
+    
+    // Then you'd use it like so...
+    
+    _joy.info = function(fooVal, barVal){
+        _joy.log(logLevel:'INFO', app: tw.system.model.processApp.acronym, foo:fooVal, bar:barVal});
+    }
+ 
+ */
+
+var Joy = Joy || {};
+var _joy = Joy;
+
+/**
+ * Logs messages using the logType level PERFORMANCE.
+ * @param userId - a string
+ * @param process - a string
+ * @param step - a string
+ * @param duration - a string
+ * @param other - a string
+ */
+if (!_joy.logPerformance){
+    _joy.logPerformance = function(userId, process, step, duration, other) {
+            
+            userId = _joy.wrapInQuotes(userId);
+            process = _joy.wrapInQuotes(process);
+            step = _joy.wrapInQuotes(step);
+            duration = "\"" + duration + "\"";
+            
+            var processApp = _joy.wrapInQuotes(_joy.getCurrentProcessApplication());
+            
+            log.error('app=' + processApp + ' logType="PERFORMANCE" userId=' + userId + ' process=' + process + ' step=' + step + ' duration=' + duration + ' ' + other);
+    };
+}
+
+/**
+ * Logs messages using the logType level ACTION.
+ * @param userId - a string
+ * @param action - a string
+ * @param step - a string
+ * @param taskId - a string
+ * @param processId - a string
+ */
+if (!_joy.logAction){
+    _joy.logAction = function(userId, action, details, step, taskId, processId, processApp) {
+        
+        userId = _joy.wrapInQuotes(userId);
+        action = _joy.wrapInQuotes(action);
+        details = _joy.wrapInQuotes(details);
+        step = _joy.wrapInQuotes(step);
+        taskId = _joy.wrapInQuotes(taskId);
+        processId = _joy.wrapInQuotes(processId);
+		
+		if (processApp == null || processApp == "") {
+			processApp = _joy.wrapInQuotes(_joy.getCurrentProcessApplication());
+        }
+		
+        log.error('app=' + processApp + ' logType="ACTION" userId=' + userId + ' action=' + action +  ' details=' + details + ' step=' + step + ' taskId=' + taskId + ' processId=' + processId);
+    };
+}
+
+/**
+ * Logs messages using the logType level ERROR.
+ * @param component - a string
+ * @param error - a string
+ * @param context - a string
+ */
+if (!_joy.logError){
+    _joy.logError = function(component, error, context, processApp) {
+
+        var processId = "";
+        var taskId = "";
+        if (tw.system.currentProcessInstanceID != null) {
+            processId = tw.system.currentProcessInstanceID;
+        }
+        if (tw.system.currentTask) {
+            taskId = tw.system.currentTask.id;
+        }
+        processId = _joy.wrapInQuotes(processId);
+        taskId = _joy.wrapInQuotes(taskId);
+        component = _joy.wrapInQuotes(component);
+        error = _joy.wrapInQuotes(error);
+        context = _joy.wrapInQuotes(context);
+		
+		if (processApp == null || processApp == "") {
+			processApp = _joy.wrapInQuotes(_joy.getCurrentProcessApplication());
+		}
+        
+        log.error('app=' + processApp + ' logType="ERROR" component=' + component + ' context=' + context + ' instanceId=' + processId + ' taskId=' + taskId + ' error=' + error);
+    };
+}
+
+/**
+ * Logs messages using the logType level INFO.
+ * @param info - a string
+ * @param details - a string
+ */
+if (!_joy.logInfo){
+    _joy.logInfo = function(info, details, processApp) {
+        
+        info = _joy.wrapInQuotes(info);
+        details = _joy.wrapInQuotes(details);
+		
+		if (processApp == null || processApp == "") {
+			processApp = _joy.wrapInQuotes(_joy.getCurrentProcessApplication());
+        }
+        
+		log.error('app=' + processApp + ' logType="INFO" info=' + info + ' details=' + details);
+    };
+}
+
+/**
+ * Wraps the given string in quotes. Replaces existing quotes with apostrophes.
+ * @param value - the string to wrap in quotes.
+ */
+if (!_joy.wrapInQuotes){
+    _joy.wrapInQuotes = function(value) {
+        if (typeof value === 'undefined' || value == null) {
+            value = "";
+        }
+        var regex = /"/g;
+        return '"' + value.replace(regex, "'") + '"';
+    };
+}
+
+/**
+ * Gets the name of the current process application.
+ */
+if (!_joy.getCurrentProcessApplication){
+    _joy.getCurrentProcessApplication = function() {
+        if (typeof tw === 'undefined') {
+            return "UNKNOWN";
+        } else {
+            return tw.system.model.processApp.acronym;
+        }
+    };
+}

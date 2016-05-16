@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamworks>
+    <coachView id="64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1" name="Feedback">
+        <lastModified>1463395994731</lastModified>
+        <lastModifiedBy>admin</lastModifiedBy>
+        <coachViewId>64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1</coachViewId>
+        <isTemplate>false</isTemplate>
+        <layout>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#xD;
+&lt;layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ibm.com/bpm/CoachDesignerNG"&gt;&#xD;
+  &lt;layoutItem xsi:type="CustomHTML"&gt;&#xD;
+    &lt;layoutItemId&gt;CustomHTML1&lt;/layoutItemId&gt;&#xD;
+    &lt;configData&gt;&#xD;
+      &lt;optionName&gt;@customHTML.textContent&lt;/optionName&gt;&#xD;
+      &lt;value&gt;&amp;lt;img class=&amp;quot;feedbackImage&amp;quot;&gt;&amp;#xD;&#xD;
+&amp;#xD;&#xD;
+&amp;lt;div id=&amp;quot;$$viewDOMID$$_div&amp;quot; class=&amp;quot;feedbackDialog&amp;quot;&gt;&amp;#xD;&#xD;
+  &amp;lt;p&gt;We want to make your lives easier. Please give us some feedback below and then click &amp;lt;b&gt;Send&amp;lt;/b&gt;.&amp;lt;/p&gt;&amp;#xD;&#xD;
+  &amp;lt;textarea id=&amp;quot;$$viewDOMID$$_text&amp;quot; class=&amp;quot;feedbackText&amp;quot;&gt;&amp;lt;/textarea&gt;&amp;#xD;&#xD;
+  &amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;feedbackButton&amp;quot;&gt;Send&amp;lt;/button&gt;&amp;#xD;&#xD;
+&amp;lt;/div&gt;&lt;/value&gt;&#xD;
+    &lt;/configData&gt;&#xD;
+    &lt;configData&gt;&#xD;
+      &lt;optionName&gt;@customHTML.contentType&lt;/optionName&gt;&#xD;
+      &lt;value&gt;TEXT&lt;/value&gt;&#xD;
+    &lt;/configData&gt;&#xD;
+    &lt;configData&gt;&#xD;
+      &lt;optionName&gt;@customHTML.variableContent&lt;/optionName&gt;&#xD;
+    &lt;/configData&gt;&#xD;
+    &lt;configData&gt;&#xD;
+      &lt;optionName&gt;@customHTML.assetContent&lt;/optionName&gt;&#xD;
+    &lt;/configData&gt;&#xD;
+  &lt;/layoutItem&gt;&#xD;
+&lt;/layout&gt;</layout>
+        <paletteIcon>/61.b7e837d6-81df-4794-bec1-000b85e20853</paletteIcon>
+        <previewImage>/61.b7e837d6-81df-4794-bec1-000b85e20853</previewImage>
+        <hasLabel>false</hasLabel>
+        <labelPosition>0</labelPosition>
+        <nineSliceX1Coord>0</nineSliceX1Coord>
+        <nineSliceX2Coord>124</nineSliceX2Coord>
+        <nineSliceY1Coord>0</nineSliceY1Coord>
+        <nineSliceY2Coord>124</nineSliceY2Coord>
+        <emitBoundary>false</emitBoundary>
+        <isPrototypeFunc>false</isPrototypeFunc>
+        <enableDevMode>false</enableDevMode>
+        <isMobileReady>false</isMobileReady>
+        <loadJsFunction>console.log('View Event Handler for Feedback for HHS');
+
+var feedbackId = "#" + this.context.viewid + "_div";
+var feedbackDiv = $("#" + this.context.viewid + "_div");
+
+var feedbackTextId = "#" + this.context.viewid + "_text";
+
+$('img', this.context.element).attr("src", com_ibm_bpm_coach.getManagedAssetUrl("feedback.png", com_ibm_bpm_coach.assetType_WEB));
+
+// $('textarea', this.context.element).attr("rows", 5);
+// $('textarea', this.context.element).attr("columns", 200);
+
+var openScript = "$(\"" + feedbackId + "\").dialog(\"open\");";
+var closeScript = "$(\"" + feedbackId + "\").dialog(\"close\");";
+
+$('img', this.context.element).attr("onclick", openScript);
+
+var _context = this.context;
+
+$('button', this.context.element).click(function() {
+  _context.options.LogFeedback({
+    params: {
+      'feedback': $(feedbackTextId).val()
+    },
+    load: function(outputs) {
+      console.log("Feedback Sent")
+      $(feedbackId).dialog("close")
+    },
+    error: function(error) {
+      console.log("Error Sending Feedback", error)
+    }
+  })  
+});
+
+feedbackDiv.dialog({
+  autoOpen: false,
+  modal: true,
+  width: "50%",
+  maxWidth: "90%",
+  title: "Feedback",
+  close: $.proxy(function(event, ui) {closeScript}, this)
+});
+</loadJsFunction>
+        <unloadJsFunction isNull="true" />
+        <viewJsFunction>console.log('View Event Handler for Feedback for HHS');
+
+
+
+</viewJsFunction>
+        <changeJsFunction>console.log('Change Event Handler for Feedback for HHS');</changeJsFunction>
+        <collaborationJsFunction isNull="true" />
+        <description>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-SIZE: 10pt; FONT-FAMILY: arial" bgColor=#f5f5f5&gt;&#xD;
+&lt;P&gt;Custom Coach View that allows users to provide Feedback on the Process Application. &lt;/P&gt;&lt;BR&gt;&#xD;
+&lt;P&gt;The core design objectives for the Feedback Custom Coach View are: &lt;/P&gt;&lt;BR&gt;&#xD;
+&lt;UL&gt;&#xD;
+&lt;LI&gt;It should be unobtrusive yet always available &#xD;
+&lt;LI&gt;It should automatically collect context information &#xD;
+&lt;LI&gt;It should be simple and quick to submit feedback &lt;/LI&gt;&lt;/UL&gt;&lt;/BODY&gt;&lt;/HTML&gt;</description>
+        <validateJsFunction isNull="true" />
+        <previewAdvHtml isNull="true" />
+        <previewAdvJs isNull="true" />
+        <useUrlBinding>false</useUrlBinding>
+        <guid>guid:f3eb1e4761645575:369025bb:154aed6bf61:-7ff9</guid>
+        <versionId>755cbf68-09d2-41e9-b15e-028b4d82cabe</versionId>
+        <configOption name="LogFeedback">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewConfigOptionId>66.f33cf203-239c-4322-a52d-0c39e2a40215</coachViewConfigOptionId>
+            <coachViewId>64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1</coachViewId>
+            <isList>false</isList>
+            <propertyType>SERVICE</propertyType>
+            <label></label>
+            <classId isNull="true" />
+            <processId>/1.a1ce764c-98a6-4eae-8abf-3b10f03e6c0e</processId>
+            <isAdaptive>false</isAdaptive>
+            <seq>1</seq>
+            <description></description>
+            <groupName isNull="true" />
+            <guid>guid:d014144d3bcfbd7d:-6ea6424d:154b057916f:-7ffa</guid>
+            <versionId>549c3a98-1c6f-42eb-8704-d0f856f9b946</versionId>
+        </configOption>
+        <resource>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewResourceId>67.0f8db1ba-11b6-40e7-8563-066092519488</coachViewResourceId>
+            <coachViewId>64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1</coachViewId>
+            <filePath isNull="true" />
+            <ieCondition isNull="true" />
+            <mediaQuery isNull="true" />
+            <scriptLoadStyle isNull="true" />
+            <assetUuid>/61.47fdaf7b-f1c8-4079-9de2-85071e47da61</assetUuid>
+            <seq>1</seq>
+            <guid>539733cb-7fbc-4c28-a984-d9bfc1538ca5</guid>
+            <versionId>eec34e21-b31c-417b-a8d3-8ced3281aa6b</versionId>
+        </resource>
+        <inlineScript name="Inline CSS">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewInlineScriptId>68.0176bbff-b078-49bb-9fb7-a5171f240b47</coachViewInlineScriptId>
+            <coachViewId>64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1</coachViewId>
+            <scriptType>CSS</scriptType>
+            <scriptBlock>@import "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css";
+
+.feedbackDialog {
+
+}
+
+.feedbackImage { 
+
+}
+
+.feedbackText { 
+  width: 100%;
+}</scriptBlock>
+            <seq>0</seq>
+            <description isNull="true" />
+            <guid>d0a3fdbd-9147-444b-b513-199ffb5af7bf</guid>
+            <versionId>2281ccf8-a3fa-4c31-989f-1fa192ed1ffc</versionId>
+        </inlineScript>
+        <inlineScript name="Inline Javascript">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewInlineScriptId>68.a25cbba4-b227-4920-8ab2-32d591d40e72</coachViewInlineScriptId>
+            <coachViewId>64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1</coachViewId>
+            <scriptType>JS</scriptType>
+            <scriptBlock></scriptBlock>
+            <seq>1</seq>
+            <description isNull="true" />
+            <guid>b734b7ee-f704-40f6-8321-ad40aaad4ee3</guid>
+            <versionId>58ad8f90-6a6f-46b8-8347-5501be7d6d78</versionId>
+        </inlineScript>
+        <inlineScript name="Header HTML">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewInlineScriptId>68.fc23d67c-884b-47ca-aa71-ee0648640a7a</coachViewInlineScriptId>
+            <coachViewId>64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1</coachViewId>
+            <scriptType>HTML</scriptType>
+            <scriptBlock isNull="true" />
+            <seq>2</seq>
+            <description isNull="true" />
+            <guid>01e2a857-43d3-4ab0-b2cf-e2bb4a5aec68</guid>
+            <versionId>1d048458-6618-4935-b903-956d58f71a68</versionId>
+        </inlineScript>
+        <amdDependency>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewAmdDepId>70.aa92d413-4bbc-49fa-951c-27983da25de4</coachViewAmdDepId>
+            <coachViewId>64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1</coachViewId>
+            <moduleId>jquery</moduleId>
+            <functionArgument>jquery_BPM</functionArgument>
+            <seq>0</seq>
+            <guid>4dcb058b-b698-4b21-8395-530da19bf251</guid>
+            <versionId>394a6973-645d-4ca7-bee9-dfe11ee3f470</versionId>
+        </amdDependency>
+        <amdDependency>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewAmdDepId>70.02330b04-ccb8-4981-9612-e0b3d2951ad5</coachViewAmdDepId>
+            <coachViewId>64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1</coachViewId>
+            <moduleId>jqueryUI</moduleId>
+            <functionArgument>jqueryUI_BPM</functionArgument>
+            <seq>1</seq>
+            <guid>1ab4d892-fcd8-4294-8cce-87c7b893bb87</guid>
+            <versionId>657076e8-8af6-4314-a2c1-537c88844038</versionId>
+        </amdDependency>
+    </coachView>
+</teamworks>
+

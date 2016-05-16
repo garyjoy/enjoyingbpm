@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamworks>
+    <managedAsset id="61.94792c72-b3ae-4fc5-a8cf-d3a503a92d18" name="joyLogging.js">
+        <lastModified>1463393467277</lastModified>
+        <lastModifiedBy>admin</lastModifiedBy>
+        <managedAssetId>61.94792c72-b3ae-4fc5-a8cf-d3a503a92d18</managedAssetId>
+        <assetUuid>bb186885-de1b-49c3-b943-1473c72b4be6</assetUuid>
+        <mimeType>application/javascript</mimeType>
+        <charEncoding isNull="true" />
+        <assetTypeCode>J</assetTypeCode>
+        <length>5867</length>
+        <localLastModification>1463223977000</localLastModification>
+        <description>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-SIZE: 10pt; FONT-FAMILY: arial" bgColor=#f5f5f5&gt;Server-side JavaScript that provides an enhanced application logging interface.&lt;/BODY&gt;&lt;/HTML&gt;</description>
+        <isDocumentationFile>false</isDocumentationFile>
+        <guid>2d104a91-4e87-48fd-bfb0-9b0e2014cbda</guid>
+        <versionId>1614e5c3-475a-4615-9629-34bd3d6811b8</versionId>
+    </managedAsset>
+</teamworks>
+

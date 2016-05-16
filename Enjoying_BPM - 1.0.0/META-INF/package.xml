@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:package buildId="BPM8570-20160301-140232" buildVersion="8.5.7" buildDescription="IBM Business Process Manager V8.5.7.0 - 20160301_1434 - BPM8570-20160301-140232" containsECM="false" containsBPMN2="false" xmlns:p="http://lombardisoftware.com/schema/teamworks/7.0.0/package.xsd">
+    <target>
+        <project id="2066.64890a71-2dc4-45db-8599-17401b8b3956" name="Enjoying BPM" description="&lt;HTML>&lt;HEAD>
+&lt;STYLE type=text/css> p{margin:0px;}&lt;/STYLE>
+&lt;/HEAD>
+&lt;BODY style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: arial&quot; bgColor=#f5f5f5>
+&lt;P>A random collection of IBM BPM components that aim to help you enjoy building great solutions on the platform. &lt;/P>&lt;BR>
+&lt;P>Many of the components are implementations covered in my Blog (&lt;A href=&quot;http://garyjoy.postach.io/&quot; target=&quot;_blank&quot;>http://garyjoy.postach.io/&lt;/A>). &lt;/P>&lt;BR>
+&lt;P>The toolkit is available at &lt;A href=&quot;https://github.com/garyjoy/enjoyingbpm&quot; target=&quot;_blank&quot;>https://github.com/garyjoy/enjoyingbpm&lt;/A>. &lt;/P>&lt;/BODY>&lt;/HTML>" shortName="JOY" isToolkit="true" isHidden="false" isSystem="false"/>
+        <branch id="2063.b949a451-7bde-402a-ac2a-c3cd6fd624bf" name="Main" acronym="Main" description=""/>
+        <snapshot id="2064.41c679aa-a885-4f4f-b558-1e4b5c925f43" name="1.0.0" acronym="1.0.0" originalCreationDate="2016-05-16T12:17:27.749+01:00" description=""/>
+    </target>
+    <governanceAssignments/>
+    <dependencies>
+        <dependency rank="1" id="2069.631c46e9-53ed-4014-b023-cd4775eeca80">
+            <project id="2066.aa12f1cb-4661-3bd0-a351-45649d179885" name="Responsive Coaches" shortName="SYSRC" isToolkit="true" isHidden="false" isSystem="true"/>
+            <branch id="2063.7e0d6e21-f74c-3542-9f77-1472b63c22f1" name="Main"/>
+            <snapshot id="2064.c7680890-5385-3f24-bbc9-20da937ac8c4" name="8.5.7.0" originalCreationDate="2016-03-01T00:00:00.000Z"/>
+        </dependency>
+        <dependency rank="0" id="2069.8bbda71b-db08-4180-b26a-c8fecdf83b7e">
+            <project id="2066.1b351583-e5cb-43b7-baee-340a63130ea7" name="System Data" shortName="TWSYS" isToolkit="true" isHidden="false" isSystem="true"/>
+            <branch id="2063.0798815e-0346-4ef4-8946-ab4301c9f340" name="Main"/>
+            <snapshot id="2064.1080ded6-d153-4654-947c-2d16fce170ed" name="8.5.7.0" originalCreationDate="2015-08-25T01:00:00.000+01:00"/>
+        </dependency>
+    </dependencies>
+    <objects>
+        <object id="1.7a96f6d5-5c13-4ca3-b9c3-3a96028af79e" versionId="7b517aba-45c8-4718-b1c2-174b561c4a50" name="Test Harness for CSHS Feedback" type="process"/>
+        <object id="1.7e51c26a-8105-4146-b701-0e863250c177" versionId="afc25725-803e-4ab6-a07e-cd0f214bb82d" name="Deployment Service" type="process"/>
+        <object id="1.815a9f35-b032-4993-85af-0a2dc1077873" versionId="0eff1355-aaa8-4f05-ae67-6a09067ef888" name="Log Action" type="process"/>
+        <object id="1.9efa9820-c072-4626-b058-b908c5ba3b12" versionId="ebcbf8a3-3fc4-4ec9-9fea-d556120e4904" name="Test Harness for HHS Feedback" type="process"/>
+        <object id="1.a1ce764c-98a6-4eae-8abf-3b10f03e6c0e" versionId="826cb0df-2dcb-4817-b92b-acc12d13fc57" name="Log Feedback" type="process"/>
+        <object id="61.47fdaf7b-f1c8-4079-9de2-85071e47da61" versionId="65c019d3-ea93-4c12-a25f-1b36abdb0e20" name="AMD.js" type="managedAsset"/>
+        <object id="61.94792c72-b3ae-4fc5-a8cf-d3a503a92d18" versionId="1614e5c3-475a-4615-9629-34bd3d6811b8" name="joyLogging.js" type="managedAsset"/>
+        <object id="61.b247e3b3-5717-4a8b-b34c-abf5f3f5a5b5" versionId="f9a3530d-7ee3-4624-b5f0-843f7440a9b7" name="e77f2a7e-10b4-45ee-90eb-e5b1546cc743.zip" type="managedAsset"/>
+        <object id="61.b7e837d6-81df-4794-bec1-000b85e20853" versionId="5bbbfcf9-e65a-4371-aefe-b96462ce4ae2" name="feedback.png" type="managedAsset"/>
+        <object id="62.1ec58eb6-1b60-4c21-a212-35d0444ee883" versionId="43a639a4-0e37-40c8-8cd9-89fc048a21e7" name="Environment Variables" type="environmentVariableSet"/>
+        <object id="63.2dcd2359-7408-435d-be5a-3c5381d9db11" versionId="46e123be-9fbe-451d-8f6c-72db3eb83ee3" name="Toolkit Settings" type="projectDefaults"/>
+        <object id="64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1" versionId="755cbf68-09d2-41e9-b15e-028b4d82cabe" name="Feedback" type="coachView"/>
+        <object id="2064.41c679aa-a885-4f4f-b558-1e4b5c925f43.2101.103" versionId="" name="Feedback Custom Coach View" type="SmartFolder"/>
+    </objects>
+    <files>
+        <file path="9620f184-79b9-44fc-819c-2b9f77c9a350" id="61.47fdaf7b-f1c8-4079-9de2-85071e47da61"/>
+        <file path="bb186885-de1b-49c3-b943-1473c72b4be6" id="61.94792c72-b3ae-4fc5-a8cf-d3a503a92d18"/>
+        <file path="9df29b26-45df-432e-ae97-b457b216de7e" id="61.b247e3b3-5717-4a8b-b34c-abf5f3f5a5b5"/>
+        <file path="19c0b51f-c1b3-47e9-9f6d-fc01414ce675" id="61.b7e837d6-81df-4794-bec1-000b85e20853"/>
+    </files>
+</p:package>

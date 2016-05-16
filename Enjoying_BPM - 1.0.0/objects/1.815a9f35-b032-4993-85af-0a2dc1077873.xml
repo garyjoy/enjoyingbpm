@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamworks>
+    <process id="1.815a9f35-b032-4993-85af-0a2dc1077873" name="Log Action">
+        <lastModified>1463393987258</lastModified>
+        <lastModifiedBy>admin</lastModifiedBy>
+        <processId>1.815a9f35-b032-4993-85af-0a2dc1077873</processId>
+        <image isNull="true" />
+        <tabGroup isNull="true" />
+        <startingProcessItemId>2025.9c30da91-f122-467c-a8a4-697aecae5845</startingProcessItemId>
+        <isRootProcess>false</isRootProcess>
+        <processType>6</processType>
+        <isErrorHandlerEnabled>false</isErrorHandlerEnabled>
+        <errorHandlerItemId isNull="true" />
+        <isLoggingVariables>false</isLoggingVariables>
+        <isTransactional>false</isTransactional>
+        <processTimingLevel isNull="true" />
+        <participantRef isNull="true" />
+        <exposedType isNull="true" />
+        <isTrackingEnabled>true</isTrackingEnabled>
+        <xmlData isNull="true" />
+        <cachingType>false</cachingType>
+        <itemLabel isNull="true" />
+        <cacheLength>43200</cacheLength>
+        <mobileReady>false</mobileReady>
+        <sboSyncEnabled>true</sboSyncEnabled>
+        <externalId isNull="true" />
+        <isSecured>false</isSecured>
+        <description>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-SIZE: 10pt; FONT-FAMILY: arial" bgColor=#f5f5f5&gt;System Service wrapper around &lt;EM&gt;logAction()&lt;/EM&gt; in &lt;STRONG&gt;joyLogging.js&lt;/STRONG&gt;.&lt;/BODY&gt;&lt;/HTML&gt;</description>
+        <guid>guid:f3eb1e4761645575:369025bb:154aed6bf61:-7fff</guid>
+        <versionId>0eff1355-aaa8-4f05-ae67-6a09067ef888</versionId>
+        <dependencySummary isNull="true" />
+        <processParameter name="action">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <processParameterId>2055.a0043bec-b4f3-4c84-94fc-01bdbad8d802</processParameterId>
+            <processId>1.815a9f35-b032-4993-85af-0a2dc1077873</processId>
+            <parameterType>1</parameterType>
+            <isArrayOf>false</isArrayOf>
+            <classId>8bbda71b-db08-4180-b26a-c8fecdf83b7e/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+            <seq>1</seq>
+            <hasDefault>true</hasDefault>
+            <defaultValue>"Default Action for Log Action"</defaultValue>
+            <isLocked>false</isLocked>
+            <description>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-SIZE: 10pt; FONT-FAMILY: arial" bgColor=#f5f5f5&gt;&#xD;
+&lt;P&gt;The "Action" to Log. &lt;/P&gt;&lt;BR&gt;&#xD;
+&lt;P&gt;You will likely want to group and report by Action so you should probably consider this as an Enum parameter (you should consider creating an EPV for Actions). &lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;</description>
+            <guid>32bb55ac-b70b-4475-b11c-d8225751c0f5</guid>
+            <versionId>1945a52c-a232-4794-afae-a85760d84132</versionId>
+        </processParameter>
+        <processParameter name="details">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <processParameterId>2055.cbd7403e-f15b-4f7c-829c-66a22fdb0e08</processParameterId>
+            <processId>1.815a9f35-b032-4993-85af-0a2dc1077873</processId>
+            <parameterType>1</parameterType>
+            <isArrayOf>false</isArrayOf>
+            <classId>8bbda71b-db08-4180-b26a-c8fecdf83b7e/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+            <seq>2</seq>
+            <hasDefault>true</hasDefault>
+            <defaultValue>"Default Details for Log Action"</defaultValue>
+            <isLocked>false</isLocked>
+            <description>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-SIZE: 10pt; FONT-FAMILY: arial" bgColor=#f5f5f5&gt;&#xD;
+&lt;P&gt;The "Action" details&amp;nbsp;to Log. &lt;/P&gt;&lt;BR&gt;&#xD;
+&lt;P&gt;If the Action was "Task Completed" the Detail might include the User Name or some other process metadata. &lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;</description>
+            <guid>3e5d20e7-0f82-4c1d-99a0-33ad4caaf1cb</guid>
+            <versionId>d7e128bb-beee-4f62-b71b-1283318ba8d4</versionId>
+        </processParameter>
+        <item>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <processItemId>2025.346bd0e8-eed4-4952-88e8-1d902e7e2fc0</processItemId>
+            <processId>1.815a9f35-b032-4993-85af-0a2dc1077873</processId>
+            <name>End</name>
+            <tWComponentName>ExitPoint</tWComponentName>
+            <tWComponentId>3008.c81c875c-6c03-43da-b1a5-ee92a738a473</tWComponentId>
+            <isLogEnabled>false</isLogEnabled>
+            <isTraceEnabled>false</isTraceEnabled>
+            <traceCategory isNull="true" />
+            <traceLevel isNull="true" />
+            <traceMessage isNull="true" />
+            <traceSymbolTable isNull="true" />
+            <isExecutionContextTraced>false</isExecutionContextTraced>
+            <saveExecutionContext>true</saveExecutionContext>
+            <documentation isNull="true" />
+            <isErrorHandlerEnabled>false</isErrorHandlerEnabled>
+            <errorHandlerItemId isNull="true" />
+            <guid>guid:f3eb1e4761645575:369025bb:154aed6bf61:-7ffe</guid>
+            <versionId>7e27c017-2ffe-4467-9608-0e2a697d517f</versionId>
+            <layoutData x="700" y="99">
+                <errorLink>
+                    <controlPoints />
+                    <showEndState>false</showEndState>
+                    <showName>false</showName>
+                </errorLink>
+            </layoutData>
+            <TWComponent>
+                <lastModified isNull="true" />
+                <lastModifiedBy isNull="true" />
+                <exitPointId>3008.c81c875c-6c03-43da-b1a5-ee92a738a473</exitPointId>
+                <haltProcess>false</haltProcess>
+                <guid>e33c52e2-fdef-4526-8315-43369340e1ef</guid>
+                <versionId>a457aacf-1bba-48c2-b157-aa63db38f47c</versionId>
+            </TWComponent>
+        </item>
+        <item>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <processItemId>2025.9c30da91-f122-467c-a8a4-697aecae5845</processItemId>
+            <processId>1.815a9f35-b032-4993-85af-0a2dc1077873</processId>
+            <name>Log Action</name>
+            <tWComponentName>Script</tWComponentName>
+            <tWComponentId>3011.a583d6c1-4de4-4bcc-8680-df866065049c</tWComponentId>
+            <isLogEnabled>false</isLogEnabled>
+            <isTraceEnabled>false</isTraceEnabled>
+            <traceCategory isNull="true" />
+            <traceLevel isNull="true" />
+            <traceMessage isNull="true" />
+            <traceSymbolTable isNull="true" />
+            <isExecutionContextTraced>false</isExecutionContextTraced>
+            <saveExecutionContext>false</saveExecutionContext>
+            <documentation isNull="true" />
+            <isErrorHandlerEnabled>false</isErrorHandlerEnabled>
+            <errorHandlerItemId isNull="true" />
+            <guid>guid:f3eb1e4761645575:369025bb:154aed6bf61:-7ffc</guid>
+            <versionId>cfb7d43d-6afd-4609-ba7f-95305c56e318</versionId>
+            <layoutData x="345" y="84">
+                <errorLink>
+                    <controlPoints />
+                    <showEndState>false</showEndState>
+                    <showName>false</showName>
+                </errorLink>
+            </layoutData>
+            <TWComponent>
+                <lastModified isNull="true" />
+                <lastModifiedBy isNull="true" />
+                <scriptId>3011.a583d6c1-4de4-4bcc-8680-df866065049c</scriptId>
+                <scriptTypeId>2</scriptTypeId>
+                <isActive>true</isActive>
+                <script>
+var userId = tw.system.user_loginName;
+var step = tw.system.currentTask == null ? "" : tw.system.currentTask.processInstanceStep;
+var taskId = tw.system.currentTask == null ? "" : tw.system.currentTask.id;
+var processId = tw.system.currentProcessInstanceID;
+var processApp = tw.system.currentProcess == null ? "" : tw.system.currentProcess.processApp.acronym;
+
+_joy.logAction(userId, tw.local.action, tw.local.details, step, taskId, processId, processApp)</script>
+                <isRule>false</isRule>
+                <guid>d4e1f6ca-c7e7-4bb0-a8cf-92ff183b79f2</guid>
+                <versionId>fb213f32-59d8-4df9-835c-b8e5b19cbe00</versionId>
+            </TWComponent>
+        </item>
+        <startingProcessItemId>2025.9c30da91-f122-467c-a8a4-697aecae5845</startingProcessItemId>
+        <errorHandlerItemId isNull="true" />
+        <layoutData noConversion="true">
+            <errorLink>
+                <controlPoints />
+                <showEndState>false</showEndState>
+                <showName>false</showName>
+            </errorLink>
+        </layoutData>
+        <startPoint>
+            <layoutData x="20" y="100">
+                <errorLink>
+                    <controlPoints />
+                    <showEndState>false</showEndState>
+                    <showName>false</showName>
+                </errorLink>
+            </layoutData>
+        </startPoint>
+        <startLink>
+            <fromPort locationId="rightCenter" portType="1" />
+            <toPort locationId="leftCenter" portType="2" />
+            <layoutData>
+                <controlPoints />
+                <showEndState>false</showEndState>
+                <showName>false</showName>
+            </layoutData>
+        </startLink>
+        <link name="Untitled">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <processLinkId>2027.c081266a-7114-4d7c-9c25-ecad7d4d12dd</processLinkId>
+            <processId>1.815a9f35-b032-4993-85af-0a2dc1077873</processId>
+            <description isNull="true" />
+            <fromProcessItemId>2025.9c30da91-f122-467c-a8a4-697aecae5845</fromProcessItemId>
+            <endStateId>Out</endStateId>
+            <toProcessItemId>2025.346bd0e8-eed4-4952-88e8-1d902e7e2fc0</toProcessItemId>
+            <guid>1b408b60-7abe-402c-96fc-9d2d2a7f8e2c</guid>
+            <versionId>9b7fd4dd-9d40-44cf-a9a9-886166127cd1</versionId>
+            <layoutData>
+                <controlPoints />
+                <showEndState>false</showEndState>
+                <showName>false</showName>
+            </layoutData>
+            <fromItemPort locationId="rightCenter" portType="1" />
+            <toItemPort locationId="leftCenter" portType="2" />
+            <fromProcessItemId>2025.9c30da91-f122-467c-a8a4-697aecae5845</fromProcessItemId>
+            <toProcessItemId>2025.346bd0e8-eed4-4952-88e8-1d902e7e2fc0</toProcessItemId>
+        </link>
+    </process>
+</teamworks>
+
