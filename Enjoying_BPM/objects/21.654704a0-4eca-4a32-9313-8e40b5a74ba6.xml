@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamworks>
+    <epv id="21.654704a0-4eca-4a32-9313-8e40b5a74ba6" name="Actions">
+        <lastModified>1463501304806</lastModified>
+        <lastModifiedBy>admin</lastModifiedBy>
+        <epvId>21.654704a0-4eca-4a32-9313-8e40b5a74ba6</epvId>
+        <extDescription isNull="true" />
+        <participantRef isNull="true" />
+        <feedback isNull="true" />
+        <description>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-SIZE: 10pt; FONT-FAMILY: arial" bgColor=#f5f5f5&gt;&#xD;
+&lt;P&gt;An Enum-style EPV for the Actions that our components generate log entries for. &lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;</description>
+        <guid>guid:dc6ffb303ae7af16:-520374b:154bf700ffb:-7ffe</guid>
+        <versionId>07bf195f-e8b5-4e3c-8160-3d11b69172d1</versionId>
+        <EPV_VAR>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <epvVarId>2013.73000af7-453f-4f05-8064-3c13fce79b8d</epvVarId>
+            <epvId>21.654704a0-4eca-4a32-9313-8e40b5a74ba6</epvId>
+            <name>UserFeedback</name>
+            <varName>UserFeedback</varName>
+            <extDescription>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-SIZE: 10pt; FONT-FAMILY: arial" bgColor=#f5f5f5&gt;&#xD;
+&lt;P&gt;This Action indicates that a user has submitted feedback using the Feedback custom Coach View. &lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;</extDescription>
+            <variableTypeRef>8bbda71b-db08-4180-b26a-c8fecdf83b7e/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</variableTypeRef>
+            <defaultValue>User Feedback</defaultValue>
+            <isChgActiveProc>false</isChgActiveProc>
+            <guid>fb607eb3-9358-4700-942a-cdce9d371daf</guid>
+            <versionId>8d1e06d4-4f6e-4c7f-a4eb-193a16abb764</versionId>
+        </EPV_VAR>
+    </epv>
+</teamworks>
+

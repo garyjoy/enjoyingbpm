@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <teamworks>
     <process id="1.815a9f35-b032-4993-85af-0a2dc1077873" name="Log Action">
-        <lastModified>1463393987258</lastModified>
+        <lastModified>1463597240557</lastModified>
         <lastModifiedBy>admin</lastModifiedBy>
         <processId>1.815a9f35-b032-4993-85af-0a2dc1077873</processId>
         <image isNull="true" />
@@ -30,7 +30,7 @@
 &lt;/HEAD&gt;&#xD;
 &lt;BODY style="FONT-SIZE: 10pt; FONT-FAMILY: arial" bgColor=#f5f5f5&gt;System Service wrapper around &lt;EM&gt;logAction()&lt;/EM&gt; in &lt;STRONG&gt;joyLogging.js&lt;/STRONG&gt;.&lt;/BODY&gt;&lt;/HTML&gt;</description>
         <guid>guid:f3eb1e4761645575:369025bb:154aed6bf61:-7fff</guid>
-        <versionId>0eff1355-aaa8-4f05-ae67-6a09067ef888</versionId>
+        <versionId>5f22f94c-2ed6-4c4a-a7a9-a91b1c7e925c</versionId>
         <dependencySummary isNull="true" />
         <processParameter name="action">
             <lastModified isNull="true" />
@@ -77,6 +77,53 @@
         <item>
             <lastModified isNull="true" />
             <lastModifiedBy isNull="true" />
+            <processItemId>2025.9c30da91-f122-467c-a8a4-697aecae5845</processItemId>
+            <processId>1.815a9f35-b032-4993-85af-0a2dc1077873</processId>
+            <name>Log Action</name>
+            <tWComponentName>Script</tWComponentName>
+            <tWComponentId>3011.a583d6c1-4de4-4bcc-8680-df866065049c</tWComponentId>
+            <isLogEnabled>false</isLogEnabled>
+            <isTraceEnabled>false</isTraceEnabled>
+            <traceCategory isNull="true" />
+            <traceLevel isNull="true" />
+            <traceMessage isNull="true" />
+            <traceSymbolTable isNull="true" />
+            <isExecutionContextTraced>false</isExecutionContextTraced>
+            <saveExecutionContext>false</saveExecutionContext>
+            <documentation isNull="true" />
+            <isErrorHandlerEnabled>false</isErrorHandlerEnabled>
+            <errorHandlerItemId isNull="true" />
+            <guid>guid:f3eb1e4761645575:369025bb:154aed6bf61:-7ffc</guid>
+            <versionId>0460b15c-127f-4246-94a2-b904df1788a9</versionId>
+            <layoutData x="345" y="84">
+                <errorLink>
+                    <controlPoints />
+                    <showEndState>false</showEndState>
+                    <showName>false</showName>
+                </errorLink>
+            </layoutData>
+            <TWComponent>
+                <lastModified isNull="true" />
+                <lastModifiedBy isNull="true" />
+                <scriptId>3011.a583d6c1-4de4-4bcc-8680-df866065049c</scriptId>
+                <scriptTypeId>2</scriptTypeId>
+                <isActive>true</isActive>
+                <script>
+var userId = tw.system.user_loginName;
+var step = tw.system.currentTask == null ? "" : tw.system.currentTask.processInstanceStep;
+var taskId = tw.system.currentTask == null ? "" : tw.system.currentTask.id;
+var processId = tw.system.currentProcessInstanceID;
+var processApp = tw.system.currentProcess == null ? "" : tw.system.currentProcess.processApp.acronym;
+
+_joy.logAction(userId, tw.local.action, tw.local.details, step, taskId, processId, processApp);</script>
+                <isRule>false</isRule>
+                <guid>d4e1f6ca-c7e7-4bb0-a8cf-92ff183b79f2</guid>
+                <versionId>abf578f8-e93c-4946-9af3-d184b567f178</versionId>
+            </TWComponent>
+        </item>
+        <item>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
             <processItemId>2025.346bd0e8-eed4-4952-88e8-1d902e7e2fc0</processItemId>
             <processId>1.815a9f35-b032-4993-85af-0a2dc1077873</processId>
             <name>End</name>
@@ -111,53 +158,15 @@
                 <versionId>a457aacf-1bba-48c2-b157-aa63db38f47c</versionId>
             </TWComponent>
         </item>
-        <item>
+        <RESOURCE_PROCESS_LINK>
             <lastModified isNull="true" />
             <lastModifiedBy isNull="true" />
-            <processItemId>2025.9c30da91-f122-467c-a8a4-697aecae5845</processItemId>
+            <resourceProcessLinkId>2059.f9c849f1-3f79-4a91-858b-04a1cdc7b658</resourceProcessLinkId>
+            <resourceBundleGroupId>/50.e0cdc6d9-4401-4f9a-8069-700f60fec35b</resourceBundleGroupId>
             <processId>1.815a9f35-b032-4993-85af-0a2dc1077873</processId>
-            <name>Log Action</name>
-            <tWComponentName>Script</tWComponentName>
-            <tWComponentId>3011.a583d6c1-4de4-4bcc-8680-df866065049c</tWComponentId>
-            <isLogEnabled>false</isLogEnabled>
-            <isTraceEnabled>false</isTraceEnabled>
-            <traceCategory isNull="true" />
-            <traceLevel isNull="true" />
-            <traceMessage isNull="true" />
-            <traceSymbolTable isNull="true" />
-            <isExecutionContextTraced>false</isExecutionContextTraced>
-            <saveExecutionContext>false</saveExecutionContext>
-            <documentation isNull="true" />
-            <isErrorHandlerEnabled>false</isErrorHandlerEnabled>
-            <errorHandlerItemId isNull="true" />
-            <guid>guid:f3eb1e4761645575:369025bb:154aed6bf61:-7ffc</guid>
-            <versionId>cfb7d43d-6afd-4609-ba7f-95305c56e318</versionId>
-            <layoutData x="345" y="84">
-                <errorLink>
-                    <controlPoints />
-                    <showEndState>false</showEndState>
-                    <showName>false</showName>
-                </errorLink>
-            </layoutData>
-            <TWComponent>
-                <lastModified isNull="true" />
-                <lastModifiedBy isNull="true" />
-                <scriptId>3011.a583d6c1-4de4-4bcc-8680-df866065049c</scriptId>
-                <scriptTypeId>2</scriptTypeId>
-                <isActive>true</isActive>
-                <script>
-var userId = tw.system.user_loginName;
-var step = tw.system.currentTask == null ? "" : tw.system.currentTask.processInstanceStep;
-var taskId = tw.system.currentTask == null ? "" : tw.system.currentTask.id;
-var processId = tw.system.currentProcessInstanceID;
-var processApp = tw.system.currentProcess == null ? "" : tw.system.currentProcess.processApp.acronym;
-
-_joy.logAction(userId, tw.local.action, tw.local.details, step, taskId, processId, processApp)</script>
-                <isRule>false</isRule>
-                <guid>d4e1f6ca-c7e7-4bb0-a8cf-92ff183b79f2</guid>
-                <versionId>fb213f32-59d8-4df9-835c-b8e5b19cbe00</versionId>
-            </TWComponent>
-        </item>
+            <guid>3b388414-c2eb-41b2-9203-0329d6cf63eb</guid>
+            <versionId>bef471df-90cb-453f-b337-67216941f35f</versionId>
+        </RESOURCE_PROCESS_LINK>
         <startingProcessItemId>2025.9c30da91-f122-467c-a8a4-697aecae5845</startingProcessItemId>
         <errorHandlerItemId isNull="true" />
         <layoutData noConversion="true">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <teamworks>
     <coachView id="64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1" name="Feedback">
-        <lastModified>1463395994731</lastModified>
+        <lastModified>1463597351816</lastModified>
         <lastModifiedBy>admin</lastModifiedBy>
         <coachViewId>64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1</coachViewId>
         <isTemplate>false</isTemplate>
@@ -14,10 +14,10 @@
       &lt;value&gt;&amp;lt;img class=&amp;quot;feedbackImage&amp;quot;&gt;&amp;#xD;&#xD;
 &amp;#xD;&#xD;
 &amp;lt;div id=&amp;quot;$$viewDOMID$$_div&amp;quot; class=&amp;quot;feedbackDialog&amp;quot;&gt;&amp;#xD;&#xD;
-  &amp;lt;p&gt;We want to make your lives easier. Please give us some feedback below and then click &amp;lt;b&gt;Send&amp;lt;/b&gt;.&amp;lt;/p&gt;&amp;#xD;&#xD;
+  &amp;lt;p&gt;We want to make your lives easier. Please give us some feedback below and click &amp;lt;b&gt;Send&amp;lt;/b&gt;.&amp;lt;/p&gt;  &amp;#xD;&#xD;
   &amp;lt;textarea id=&amp;quot;$$viewDOMID$$_text&amp;quot; class=&amp;quot;feedbackText&amp;quot;&gt;&amp;lt;/textarea&gt;&amp;#xD;&#xD;
   &amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;feedbackButton&amp;quot;&gt;Send&amp;lt;/button&gt;&amp;#xD;&#xD;
-&amp;lt;/div&gt;&lt;/value&gt;&#xD;
+&amp;lt;/div&gt;  &lt;/value&gt;&#xD;
     &lt;/configData&gt;&#xD;
     &lt;configData&gt;&#xD;
       &lt;optionName&gt;@customHTML.contentType&lt;/optionName&gt;&#xD;
@@ -51,9 +51,6 @@ var feedbackDiv = $("#" + this.context.viewid + "_div");
 var feedbackTextId = "#" + this.context.viewid + "_text";
 
 $('img', this.context.element).attr("src", com_ibm_bpm_coach.getManagedAssetUrl("feedback.png", com_ibm_bpm_coach.assetType_WEB));
-
-// $('textarea', this.context.element).attr("rows", 5);
-// $('textarea', this.context.element).attr("columns", 200);
 
 var openScript = "$(\"" + feedbackId + "\").dialog(\"open\");";
 var closeScript = "$(\"" + feedbackId + "\").dialog(\"close\");";
@@ -109,7 +106,7 @@ feedbackDiv.dialog({
         <previewAdvJs isNull="true" />
         <useUrlBinding>false</useUrlBinding>
         <guid>guid:f3eb1e4761645575:369025bb:154aed6bf61:-7ff9</guid>
-        <versionId>755cbf68-09d2-41e9-b15e-028b4d82cabe</versionId>
+        <versionId>e511a02a-bc59-4861-9134-5edc6d3fef4e</versionId>
         <configOption name="LogFeedback">
             <lastModified isNull="true" />
             <lastModifiedBy isNull="true" />
@@ -189,6 +186,16 @@ feedbackDiv.dialog({
             <guid>01e2a857-43d3-4ab0-b2cf-e2bb4a5aec68</guid>
             <versionId>1d048458-6618-4935-b903-956d58f71a68</versionId>
         </inlineScript>
+        <localization>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewLocalResId>69.96e52bd9-ba0f-4d3a-8689-e12d82305aa0</coachViewLocalResId>
+            <coachViewId>64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1</coachViewId>
+            <resourceBundleGroupId>/50.e0cdc6d9-4401-4f9a-8069-700f60fec35b</resourceBundleGroupId>
+            <seq>1</seq>
+            <guid>guid:dc6ffb303ae7af16:-520374b:154bf700ffb:-7ffd</guid>
+            <versionId>eae3feb7-b710-4f9d-a90b-c7f860e9a3ff</versionId>
+        </localization>
         <amdDependency>
             <lastModified isNull="true" />
             <lastModifiedBy isNull="true" />

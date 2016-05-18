@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamworks>
+    <resourceBundleGroup id="50.e0cdc6d9-4401-4f9a-8069-700f60fec35b" name="EnjoyingBPM">
+        <lastModified>1463584933508</lastModified>
+        <lastModifiedBy>admin</lastModifiedBy>
+        <resourceBundleGroupId>50.e0cdc6d9-4401-4f9a-8069-700f60fec35b</resourceBundleGroupId>
+        <description isNull="true" />
+        <guid>guid:dc6ffb303ae7af16:-520374b:154bf700ffb:-7fff</guid>
+        <versionId>e2883c86-4c3a-401a-8e5f-e3520620d5c6</versionId>
+        <resourceBundle>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <resourceBundleId>2038.c82a7171-5f38-4a0f-8bdb-fec06efe958c</resourceBundleId>
+            <resourceBundleGroupId>50.e0cdc6d9-4401-4f9a-8069-700f60fec35b</resourceBundleGroupId>
+            <localeLanguage isNull="true" />
+            <localeCountry isNull="true" />
+            <localeVariant isNull="true" />
+            <guid>3d1bbb89-058c-4308-94a5-ac900abb34a9</guid>
+            <versionId>1c6960e5-cade-4e87-a553-be89d53dc450</versionId>
+            <resourceBundleKey>
+                <lastModified isNull="true" />
+                <lastModifiedBy isNull="true" />
+                <resourceBundleKeyId>2039.45027c47-3efe-4fa8-830f-43c619040c73</resourceBundleKeyId>
+                <resourceBundleId>2038.c82a7171-5f38-4a0f-8bdb-fec06efe958c</resourceBundleId>
+                <key>feedback.UserInstructions</key>
+                <value>We want to make your lives easier. Please give us some feedback below and then click Send.</value>
+                <guid>283e49a8-206c-4edb-aa58-eb25cc3d39a1</guid>
+                <versionId>104f7036-77a2-4282-b6f4-6e2a871aa3f5</versionId>
+            </resourceBundleKey>
+        </resourceBundle>
+    </resourceBundleGroup>
+</teamworks>
+
