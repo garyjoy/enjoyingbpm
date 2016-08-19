@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamworks>
+    <coachView id="64.436b0470-fb17-4fa0-9032-ac6c13b790bc" name="Decisions">
+        <lastModified>1471592176022</lastModified>
+        <lastModifiedBy>admin</lastModifiedBy>
+        <coachViewId>64.436b0470-fb17-4fa0-9032-ac6c13b790bc</coachViewId>
+        <isTemplate>false</isTemplate>
+        <layout>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;ns2:layout xmlns:ns2="http://www.ibm.com/bpm/CoachDesignerNG" xmlns:ns3="http://www.ibm.com/bpm/coachview"&gt;&lt;ns2:layoutItem xsi:type="ns2:ViewRef" version="8550" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;ns2:id&gt;cdcd3812-3ca1-49c8-86cb-98d5ae2a15d0&lt;/ns2:id&gt;&lt;ns2:layoutItemId&gt;Radio_Buttons1&lt;/ns2:layoutItemId&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;ca21efbd-118a-4de7-8be5-d5b0e9679b23&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@label&lt;/ns2:optionName&gt;&lt;ns2:value&gt;Radio Buttons&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;b560478b-911b-4b88-891f-1c809f8b5138&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@helpText&lt;/ns2:optionName&gt;&lt;ns2:value&gt;&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;613525d4-7773-458e-8b15-21262ca7374e&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@labelVisibility&lt;/ns2:optionName&gt;&lt;ns2:value&gt;HIDE&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;86818f22-56f7-46e9-8d55-3965d7a46fdd&lt;/ns2:id&gt;&lt;ns2:optionName&gt;selectionList&lt;/ns2:optionName&gt;&lt;ns2:value&gt;tw.options.options[]&lt;/ns2:value&gt;&lt;ns2:valueType&gt;dynamic&lt;/ns2:valueType&gt;&lt;/ns2:configData&gt;&lt;ns2:viewUUID&gt;64.c9d7242d-e16e-3569-8045-764ca9c222a4&lt;/ns2:viewUUID&gt;&lt;ns2:binding&gt;tw.businessData.decision&lt;/ns2:binding&gt;&lt;/ns2:layoutItem&gt;&lt;/ns2:layout&gt;</layout>
+        <paletteIcon isNull="true" />
+        <previewImage isNull="true" />
+        <hasLabel>false</hasLabel>
+        <labelPosition>0</labelPosition>
+        <nineSliceX1Coord>0</nineSliceX1Coord>
+        <nineSliceX2Coord>0</nineSliceX2Coord>
+        <nineSliceY1Coord>0</nineSliceY1Coord>
+        <nineSliceY2Coord>0</nineSliceY2Coord>
+        <emitBoundary>false</emitBoundary>
+        <isPrototypeFunc>false</isPrototypeFunc>
+        <enableDevMode>false</enableDevMode>
+        <isMobileReady>true</isMobileReady>
+        <loadJsFunction isNull="true" />
+        <unloadJsFunction isNull="true" />
+        <viewJsFunction isNull="true" />
+        <changeJsFunction isNull="true" />
+        <collaborationJsFunction isNull="true" />
+        <description></description>
+        <validateJsFunction isNull="true" />
+        <previewAdvHtml isNull="true" />
+        <previewAdvJs isNull="true" />
+        <useUrlBinding>false</useUrlBinding>
+        <guid>guid:d75fa7fe2eca5e46:5ba68ab3:156948fd44b:-7e4f</guid>
+        <versionId>5d79aa98-ff2f-4031-bf13-3e1a067ba922</versionId>
+        <bindingType name="decision">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewBindingTypeId>65.895e2ab8-f18e-4ab2-a911-96f74839828f</coachViewBindingTypeId>
+            <coachViewId>64.436b0470-fb17-4fa0-9032-ac6c13b790bc</coachViewId>
+            <isList>false</isList>
+            <classId>8bbda71b-db08-4180-b26a-c8fecdf83b7e/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+            <seq>0</seq>
+            <description isNull="true" />
+            <guid>54ebb3f3-837f-43cb-a45b-c846e76e69a3</guid>
+            <versionId>b2d7cd9c-f629-4c33-96c1-71dcac32097d</versionId>
+        </bindingType>
+        <configOption name="options">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewConfigOptionId>66.91da36f1-1162-4eb7-bde5-dd447ba8be98</coachViewConfigOptionId>
+            <coachViewId>64.436b0470-fb17-4fa0-9032-ac6c13b790bc</coachViewId>
+            <isList>true</isList>
+            <propertyType>OBJECT</propertyType>
+            <label></label>
+            <classId>8bbda71b-db08-4180-b26a-c8fecdf83b7e/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+            <processId isNull="true" />
+            <isAdaptive>false</isAdaptive>
+            <seq>0</seq>
+            <description></description>
+            <groupName></groupName>
+            <guid>baee6448-207f-4807-8c43-427fe56e3a33</guid>
+            <versionId>187ba8de-5a0b-4497-a406-8fe0070e4840</versionId>
+        </configOption>
+    </coachView>
+</teamworks>
+

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamworks>
+    <coachView id="64.85964e69-05fb-4c82-85c1-623473bed97b" name="Comments">
+        <lastModified>1471592185569</lastModified>
+        <lastModifiedBy>admin</lastModifiedBy>
+        <coachViewId>64.85964e69-05fb-4c82-85c1-623473bed97b</coachViewId>
+        <isTemplate>false</isTemplate>
+        <layout>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;ns2:layout xmlns:ns2="http://www.ibm.com/bpm/CoachDesignerNG" xmlns:ns3="http://www.ibm.com/bpm/coachview"&gt;&lt;ns2:layoutItem xsi:type="ns2:ViewRef" version="8550" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;ns2:id&gt;c76c4cf5-1a25-4ddc-83aa-c2816f0e71e4&lt;/ns2:id&gt;&lt;ns2:layoutItemId&gt;Section1&lt;/ns2:layoutItemId&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;c851779c-58bc-45ff-8406-248477e75cff&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@label&lt;/ns2:optionName&gt;&lt;ns2:value&gt;Section&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;c3fc94bc-443f-460f-8957-158c1a5b74b4&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@helpText&lt;/ns2:optionName&gt;&lt;ns2:value&gt;&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;3ff8f8b5-6603-4a77-8c29-d2e31fb04cf8&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@labelVisibility&lt;/ns2:optionName&gt;&lt;ns2:value&gt;HIDE&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:viewUUID&gt;64.e44c5617-c1ca-31f8-a810-ce1138fb1c99&lt;/ns2:viewUUID&gt;&lt;ns2:binding&gt;tw.businessData.comments[]&lt;/ns2:binding&gt;&lt;ns2:contentBoxContrib&gt;&lt;ns2:id&gt;ad35d5b1-dfff-4e68-8274-687d1d36da0d&lt;/ns2:id&gt;&lt;ns2:contentBoxId&gt;LAYOUT_ITEM_ID_1&lt;/ns2:contentBoxId&gt;&lt;ns2:contributions xsi:type="ns2:ViewRef" version="8550"&gt;&lt;ns2:id&gt;cc8a0517-f9db-4205-844f-3fe4625d0a0d&lt;/ns2:id&gt;&lt;ns2:layoutItemId&gt;Output_Text1&lt;/ns2:layoutItemId&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;3308f9a6-869c-4060-83b8-962091ee5962&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@label&lt;/ns2:optionName&gt;&lt;ns2:value&gt;Output Text&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;552e11f7-e02b-45b7-8068-d34c76a1aba5&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@helpText&lt;/ns2:optionName&gt;&lt;ns2:value&gt;&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;b52c8d46-7f0b-4366-8e5b-ae9604556dff&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@labelVisibility&lt;/ns2:optionName&gt;&lt;ns2:value&gt;HIDE&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:viewUUID&gt;64.1bc347b3-2b09-3a7b-8e7e-eae75491ad63&lt;/ns2:viewUUID&gt;&lt;ns2:binding&gt;tw.businessData.comments.currentItem&lt;/ns2:binding&gt;&lt;/ns2:contributions&gt;&lt;/ns2:contentBoxContrib&gt;&lt;/ns2:layoutItem&gt;&lt;ns2:layoutItem xsi:type="ns2:ViewRef" version="8550" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;ns2:id&gt;2b11c6ac-fe64-489f-87ad-48ae061e8324&lt;/ns2:id&gt;&lt;ns2:layoutItemId&gt;newComment&lt;/ns2:layoutItemId&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;401bdca4-9159-4e54-87f9-c9d27f0ce758&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@label&lt;/ns2:optionName&gt;&lt;ns2:value&gt;Text Area&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;95e2174c-63cb-48e1-8b28-56935af5f0ae&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@helpText&lt;/ns2:optionName&gt;&lt;ns2:value&gt;&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;95d0abd2-e6af-4721-85a0-e7309f05ed37&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@labelVisibility&lt;/ns2:optionName&gt;&lt;ns2:value&gt;HIDE&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:viewUUID&gt;64.6bef2bb7-9c2a-3cac-97ab-a881b5e6798e&lt;/ns2:viewUUID&gt;&lt;/ns2:layoutItem&gt;&lt;ns2:layoutItem xsi:type="ns2:ViewRef" version="8550" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;ns2:id&gt;e636ec78-ec4b-449e-8455-0bfc93d498ee&lt;/ns2:id&gt;&lt;ns2:layoutItemId&gt;Button1&lt;/ns2:layoutItemId&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;d27d3cb1-1dcf-4fc7-87dd-242d741e6d28&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@label&lt;/ns2:optionName&gt;&lt;ns2:value&gt;Add Comment&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;55c3078d-ad09-456a-8a46-38d5352dafaf&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@helpText&lt;/ns2:optionName&gt;&lt;ns2:value&gt;&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;50fdba07-117e-4b4d-88c1-006626acc08b&lt;/ns2:id&gt;&lt;ns2:optionName&gt;@labelVisibility&lt;/ns2:optionName&gt;&lt;ns2:value&gt;SHOW&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:configData&gt;&lt;ns2:id&gt;7327730d-a985-4043-856b-bc888b423480&lt;/ns2:id&gt;&lt;ns2:optionName&gt;allowMultipleClicks&lt;/ns2:optionName&gt;&lt;ns2:value&gt;true&lt;/ns2:value&gt;&lt;/ns2:configData&gt;&lt;ns2:viewUUID&gt;64.7d87b78a-a67b-3084-ad5f-edf42439ef26&lt;/ns2:viewUUID&gt;&lt;/ns2:layoutItem&gt;&lt;/ns2:layout&gt;</layout>
+        <paletteIcon isNull="true" />
+        <previewImage isNull="true" />
+        <hasLabel>false</hasLabel>
+        <labelPosition>0</labelPosition>
+        <nineSliceX1Coord>0</nineSliceX1Coord>
+        <nineSliceX2Coord>0</nineSliceX2Coord>
+        <nineSliceY1Coord>0</nineSliceY1Coord>
+        <nineSliceY2Coord>0</nineSliceY2Coord>
+        <emitBoundary>false</emitBoundary>
+        <isPrototypeFunc>false</isPrototypeFunc>
+        <enableDevMode>false</enableDevMode>
+        <isMobileReady>true</isMobileReady>
+        <loadJsFunction>// console.log('Load Event Handler for Comments');&#xD;
+var _context = this.context;&#xD;
+&#xD;
+function loadComments() {&#xD;
+    var processInstanceId = _context.options.processInstanceId.get("value");&#xD;
+&#xD;
+    _context.options.getCommentsForInstance({&#xD;
+        params: {&#xD;
+            processInstanceId: processInstanceId&#xD;
+        },&#xD;
+        load: function(outputs) {&#xD;
+            var comments = outputs.comments;&#xD;
+            _context.binding.set("value", comments);&#xD;
+        },&#xD;
+        error: function(error) {&#xD;
+            console.error("Error in getCommentsForInstance()", error);&#xD;
+        }&#xD;
+    });&#xD;
+}&#xD;
+&#xD;
+try {&#xD;
+    loadComments();&#xD;
+} catch (error) {&#xD;
+    console.error("Error in Load Event Handler for Comments Coach View", error);&#xD;
+}&#xD;
+&#xD;
+$('button', this.context.element).click(function() {&#xD;
+    var processInstanceId = _context.options.processInstanceId.get("value");&#xD;
+    var newComment = $('textarea', _context.element)[0].value;&#xD;
+&#xD;
+    if (newComment != undefined &amp;&amp; newComment.length &gt; 0) {&#xD;
+&#xD;
+        _context.options.addCommentToInstance({&#xD;
+            params: {&#xD;
+                processInstanceId: processInstanceId,&#xD;
+                comment: newComment&#xD;
+            },&#xD;
+            load: function(outputs) {&#xD;
+                console.log("Comment Added");&#xD;
+                $('textarea', _context.element)[0].value = "";&#xD;
+                loadComments();&#xD;
+            },&#xD;
+            error: function(error) {&#xD;
+                console.log("Error in addCommentToInstance()", error)&#xD;
+            }&#xD;
+        })&#xD;
+    }&#xD;
+});</loadJsFunction>
+        <unloadJsFunction isNull="true" />
+        <viewJsFunction isNull="true" />
+        <changeJsFunction isNull="true" />
+        <collaborationJsFunction isNull="true" />
+        <description isNull="true" />
+        <validateJsFunction isNull="true" />
+        <previewAdvHtml isNull="true" />
+        <previewAdvJs isNull="true" />
+        <useUrlBinding>false</useUrlBinding>
+        <guid>guid:8c014a1c4761158b:60028a2c:15694926854:-7ffb</guid>
+        <versionId>ba4bfb3b-aca1-44c2-a4d5-bf2c4969b571</versionId>
+        <bindingType name="comments">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewBindingTypeId>65.dc0f0184-1c19-4c16-8233-dd111052569c</coachViewBindingTypeId>
+            <coachViewId>64.85964e69-05fb-4c82-85c1-623473bed97b</coachViewId>
+            <isList>true</isList>
+            <classId>8bbda71b-db08-4180-b26a-c8fecdf83b7e/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+            <seq>0</seq>
+            <description isNull="true" />
+            <guid>2c02914a-57d3-40ce-aadc-763ea8faad05</guid>
+            <versionId>50bb906c-6e0a-49b5-b0b3-4611e3b36c8d</versionId>
+        </bindingType>
+        <configOption name="getCommentsForInstance">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewConfigOptionId>66.28ef37c7-f535-46b0-88d1-b2d493a38401</coachViewConfigOptionId>
+            <coachViewId>64.85964e69-05fb-4c82-85c1-623473bed97b</coachViewId>
+            <isList>false</isList>
+            <propertyType>SERVICE</propertyType>
+            <label></label>
+            <classId>8bbda71b-db08-4180-b26a-c8fecdf83b7e/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+            <processId>/1.7804e468-27a6-4892-bfad-2600a3df86c1</processId>
+            <isAdaptive>false</isAdaptive>
+            <seq>0</seq>
+            <description></description>
+            <groupName></groupName>
+            <guid>5fb7c161-0ef4-4e97-b248-fde05a8f004a</guid>
+            <versionId>0376e641-3ecf-47da-98ab-b4e359ea2d7e</versionId>
+        </configOption>
+        <configOption name="addCommentToInstance">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewConfigOptionId>66.64ea7e42-d02d-425a-b437-cf030aebb802</coachViewConfigOptionId>
+            <coachViewId>64.85964e69-05fb-4c82-85c1-623473bed97b</coachViewId>
+            <isList>false</isList>
+            <propertyType>SERVICE</propertyType>
+            <label></label>
+            <classId>8bbda71b-db08-4180-b26a-c8fecdf83b7e/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+            <processId>/1.cb6d8f77-972c-4b2d-a752-13dcf7992b4f</processId>
+            <isAdaptive>false</isAdaptive>
+            <seq>1</seq>
+            <description></description>
+            <groupName></groupName>
+            <guid>946d7f0f-070f-4095-941d-2c4ff79a333b</guid>
+            <versionId>36107483-70a9-4ec7-9b5a-8dcc73b4f4a8</versionId>
+        </configOption>
+        <configOption name="processInstanceId">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewConfigOptionId>66.70618778-a8ce-4198-a094-8fdaf57e7a9f</coachViewConfigOptionId>
+            <coachViewId>64.85964e69-05fb-4c82-85c1-623473bed97b</coachViewId>
+            <isList>false</isList>
+            <propertyType>OBJECT</propertyType>
+            <label></label>
+            <classId>8bbda71b-db08-4180-b26a-c8fecdf83b7e/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+            <processId isNull="true" />
+            <isAdaptive>false</isAdaptive>
+            <seq>2</seq>
+            <description></description>
+            <groupName></groupName>
+            <guid>3b3efe3a-1aae-44d9-8a9b-3b0eee3b9e08</guid>
+            <versionId>e2230525-5368-4f81-ad89-90f1dc40c367</versionId>
+        </configOption>
+        <resource>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewResourceId>67.c4cc2676-7b29-4181-906f-e260b7d7bd19</coachViewResourceId>
+            <coachViewId>64.85964e69-05fb-4c82-85c1-623473bed97b</coachViewId>
+            <filePath isNull="true" />
+            <ieCondition></ieCondition>
+            <mediaQuery></mediaQuery>
+            <scriptLoadStyle isNull="true" />
+            <assetUuid>/61.47fdaf7b-f1c8-4079-9de2-85071e47da61</assetUuid>
+            <seq>0</seq>
+            <guid>fc2a06b2-a19c-4004-bade-331bb31ebeed</guid>
+            <versionId>7b23a4a0-63ef-4192-9cb5-ccf0d566b3fa</versionId>
+        </resource>
+        <amdDependency>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewAmdDepId>70.d4fe8509-4e49-43c7-bb4a-6a5b4ce25fe7</coachViewAmdDepId>
+            <coachViewId>64.85964e69-05fb-4c82-85c1-623473bed97b</coachViewId>
+            <moduleId>jquery</moduleId>
+            <functionArgument>jquery_BPM</functionArgument>
+            <seq>0</seq>
+            <guid>19115c89-4268-4786-a5ea-f0ddef284941</guid>
+            <versionId>008c674a-614e-43f4-90c7-4f2321038326</versionId>
+        </amdDependency>
+        <amdDependency>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <coachViewAmdDepId>70.174fce92-7c11-4b46-a431-9dc12c7d66a1</coachViewAmdDepId>
+            <coachViewId>64.85964e69-05fb-4c82-85c1-623473bed97b</coachViewId>
+            <moduleId>jqueryUI</moduleId>
+            <functionArgument>jqueryUI_BPM</functionArgument>
+            <seq>1</seq>
+            <guid>b5afd4a9-3116-4424-baf2-2160f779e73e</guid>
+            <versionId>1e5b2655-22a1-4267-807a-b2d5e9edca73</versionId>
+        </amdDependency>
+    </coachView>
+</teamworks>
+

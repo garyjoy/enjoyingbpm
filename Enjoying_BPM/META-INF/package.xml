@@ -1,50 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<p:package buildId="BPM8570-20160301-140232" buildVersion="8.5.7" buildDescription="IBM Business Process Manager V8.5.7.0 - 20160301_1434 - BPM8570-20160301-140232" containsECM="false" containsBPMN2="false" xmlns:p="http://lombardisoftware.com/schema/teamworks/7.0.0/package.xsd">
+<p:package buildId="BPM8570CS-20160622-165656" buildVersion="8.5.7" buildDescription="IBM Business Process Manager V8.5.7.201606 - 20160622_1814 - BPM8570CS-20160622-165656" containsECM="false" containsBPMN2="false" xmlns:p="http://lombardisoftware.com/schema/teamworks/7.0.0/package.xsd">
     <target>
-        <project id="2066.64890a71-2dc4-45db-8599-17401b8b3956" name="Enjoying BPM" description="&lt;HTML>&lt;HEAD>
-&lt;STYLE type=text/css> p{margin:0px;}&lt;/STYLE>
-&lt;/HEAD>
-&lt;BODY style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: arial&quot; bgColor=#f5f5f5>
-&lt;P>A random collection of IBM BPM components that aim to help you enjoy building great solutions on the platform. &lt;/P>&lt;BR>
-&lt;P>Many of the components are implementations covered in my Blog (&lt;A href=&quot;http://garyjoy.postach.io/&quot; target=&quot;_blank&quot;>http://garyjoy.postach.io/&lt;/A>). &lt;/P>&lt;BR>
-&lt;P>The toolkit is available at &lt;A href=&quot;https://github.com/garyjoy/enjoyingbpm&quot; target=&quot;_blank&quot;>https://github.com/garyjoy/enjoyingbpm&lt;/A>. &lt;/P>&lt;/BODY>&lt;/HTML>" shortName="JOY" isToolkit="true" isHidden="false" isSystem="false"/>
+        <project id="2066.64890a71-2dc4-45db-8599-17401b8b3956" name="Enjoying BPM" description="&lt;HTML>&lt;HEAD> &lt;STYLE type=text/css> p{margin:0px;}&lt;/STYLE> &lt;/HEAD> &lt;BODY style=&quot;FONT-SIZE: 10pt; FONT-FAMILY: arial&quot; bgColor=#f5f5f5> &lt;P>A random collection of IBM BPM components that aim to help you enjoy building great solutions on the platform. &lt;/P>&lt;BR> &lt;P>Many of the components are implementations covered in my Blog (&lt;A href=&quot;http://garyjoy.postach.io/&quot; target=&quot;_blank&quot;>http://garyjoy.postach.io/&lt;/A>). &lt;/P>&lt;BR> &lt;P>The toolkit is available at &lt;A href=&quot;https://github.com/garyjoy/enjoyingbpm&quot; target=&quot;_blank&quot;>https://github.com/garyjoy/enjoyingbpm&lt;/A>. &lt;/P>&lt;/BODY>&lt;/HTML>" shortName="JOY" isToolkit="true" isHidden="false" isSystem="false"/>
         <branch id="2063.b949a451-7bde-402a-ac2a-c3cd6fd624bf" name="Main" acronym="Main" description=""/>
-        <snapshot id="2064.1fb5706a-4051-4640-ad0b-c79586a13a8a" name="1.0.1" acronym="1.0.1" originalCreationDate="2016-05-18T19:50:02.579+01:00" description=""/>
+        <snapshot id="2064.c711e322-484f-4c3e-9791-aee9a2f74768" name="1.0.2" acronym="1.0.2" originalCreationDate="2016-08-19T08:38:06.454+01:00" description="&lt;html>&lt;body>Added improved Default Human Service.&lt;/body>&lt;/html>"/>
     </target>
     <governanceAssignments/>
     <dependencies>
         <dependency rank="1" id="2069.631c46e9-53ed-4014-b023-cd4775eeca80">
             <project id="2066.aa12f1cb-4661-3bd0-a351-45649d179885" name="Responsive Coaches" shortName="SYSRC" isToolkit="true" isHidden="false" isSystem="true"/>
             <branch id="2063.7e0d6e21-f74c-3542-9f77-1472b63c22f1" name="Main"/>
-            <snapshot id="2064.c7680890-5385-3f24-bbc9-20da937ac8c4" name="8.5.7.0" originalCreationDate="2016-03-01T00:00:00.000Z"/>
+            <snapshot id="2064.c7680890-5385-3f24-bbc9-20da937ac8c4" name="8.5.7.0" originalCreationDate="2016-06-22T00:00:00.000+01:00"/>
         </dependency>
         <dependency rank="0" id="2069.8bbda71b-db08-4180-b26a-c8fecdf83b7e">
             <project id="2066.1b351583-e5cb-43b7-baee-340a63130ea7" name="System Data" shortName="TWSYS" isToolkit="true" isHidden="false" isSystem="true"/>
             <branch id="2063.0798815e-0346-4ef4-8946-ab4301c9f340" name="Main"/>
-            <snapshot id="2064.1080ded6-d153-4654-947c-2d16fce170ed" name="8.5.7.0" originalCreationDate="2015-08-25T01:00:00.000+01:00"/>
+            <snapshot id="2064.1080ded6-d153-4654-947c-2d16fce170ed" name="8.5.7.0" originalCreationDate="2015-08-25T10:00:00.000+01:00"/>
         </dependency>
     </dependencies>
     <objects>
-        <object id="1.7a96f6d5-5c13-4ca3-b9c3-3a96028af79e" versionId="7b517aba-45c8-4718-b1c2-174b561c4a50" name="Test Harness for CSHS Feedback" type="process"/>
+        <object id="1.7804e468-27a6-4892-bfad-2600a3df86c1" versionId="aa21f8e0-b79d-4a9b-b546-ab03b7ef441c" name="Get Comments for Instance" type="process"/>
         <object id="1.7e51c26a-8105-4146-b701-0e863250c177" versionId="afc25725-803e-4ab6-a07e-cd0f214bb82d" name="Deployment Service" type="process"/>
+        <object id="1.7ff26a52-d4e1-416c-84dd-ef76f37d02e4" versionId="32d6ab53-7ada-4c9d-83e1-99808deb89e8" name="Improved Default Responsive Human Service" type="process"/>
         <object id="1.815a9f35-b032-4993-85af-0a2dc1077873" versionId="5f22f94c-2ed6-4c4a-a7a9-a91b1c7e925c" name="Log Action" type="process"/>
-        <object id="1.9efa9820-c072-4626-b058-b908c5ba3b12" versionId="4811adf4-6cf4-40dc-8a2e-d50ceb3471f3" name="Test Harness for HHS Feedback" type="process"/>
         <object id="1.a1ce764c-98a6-4eae-8abf-3b10f03e6c0e" versionId="bf4cde97-57c3-4e73-b372-255a112e22c1" name="Log Feedback" type="process"/>
+        <object id="1.cb6d8f77-972c-4b2d-a752-13dcf7992b4f" versionId="194510f1-eb2d-43df-a7d6-18c45fcd473a" name="Add Comment to Instance" type="process"/>
         <object id="21.654704a0-4eca-4a32-9313-8e40b5a74ba6" versionId="07bf195f-e8b5-4e3c-8160-3d11b69172d1" name="Actions" type="epv"/>
         <object id="50.e0cdc6d9-4401-4f9a-8069-700f60fec35b" versionId="e2883c86-4c3a-401a-8e5f-e3520620d5c6" name="EnjoyingBPM" type="resourceBundleGroup"/>
+        <object id="61.11026d4e-44e8-4863-bc91-7d6f03fd66e5" versionId="374a74c4-1186-449d-a41e-845948dee547" name="e77f2a7e-10b4-45ee-90eb-e5b1546cc743.zip" type="managedAsset"/>
         <object id="61.47fdaf7b-f1c8-4079-9de2-85071e47da61" versionId="65c019d3-ea93-4c12-a25f-1b36abdb0e20" name="AMD.js" type="managedAsset"/>
         <object id="61.94792c72-b3ae-4fc5-a8cf-d3a503a92d18" versionId="1614e5c3-475a-4615-9629-34bd3d6811b8" name="joyLogging.js" type="managedAsset"/>
-        <object id="61.b247e3b3-5717-4a8b-b34c-abf5f3f5a5b5" versionId="f9a3530d-7ee3-4624-b5f0-843f7440a9b7" name="e77f2a7e-10b4-45ee-90eb-e5b1546cc743.zip" type="managedAsset"/>
         <object id="61.b7e837d6-81df-4794-bec1-000b85e20853" versionId="5bbbfcf9-e65a-4371-aefe-b96462ce4ae2" name="feedback.png" type="managedAsset"/>
         <object id="62.1ec58eb6-1b60-4c21-a212-35d0444ee883" versionId="43a639a4-0e37-40c8-8cd9-89fc048a21e7" name="Environment Variables" type="environmentVariableSet"/>
         <object id="63.2dcd2359-7408-435d-be5a-3c5381d9db11" versionId="46e123be-9fbe-451d-8f6c-72db3eb83ee3" name="Toolkit Settings" type="projectDefaults"/>
         <object id="64.0c0b526d-f0ed-4c32-b9cb-8e681b9fa3f1" versionId="e511a02a-bc59-4861-9134-5edc6d3fef4e" name="Feedback" type="coachView"/>
-        <object id="2064.1fb5706a-4051-4640-ad0b-c79586a13a8a.2101.103" versionId="" name="Feedback Custom Coach View" type="SmartFolder"/>
+        <object id="64.436b0470-fb17-4fa0-9032-ac6c13b790bc" versionId="5d79aa98-ff2f-4031-bf13-3e1a067ba922" name="Decisions" type="coachView"/>
+        <object id="64.85964e69-05fb-4c82-85c1-623473bed97b" versionId="ba4bfb3b-aca1-44c2-a4d5-bf2c4969b571" name="Comments" type="coachView"/>
+        <object id="2064.c711e322-484f-4c3e-9791-aee9a2f74768.2101.103" versionId="" name="Feedback Custom Coach View" type="SmartFolder"/>
     </objects>
     <files>
-        <file path="9620f184-79b9-44fc-819c-2b9f77c9a350" id="61.47fdaf7b-f1c8-4079-9de2-85071e47da61"/>
-        <file path="bb186885-de1b-49c3-b943-1473c72b4be6" id="61.94792c72-b3ae-4fc5-a8cf-d3a503a92d18"/>
-        <file path="9df29b26-45df-432e-ae97-b457b216de7e" id="61.b247e3b3-5717-4a8b-b34c-abf5f3f5a5b5"/>
-        <file path="19c0b51f-c1b3-47e9-9f6d-fc01414ce675" id="61.b7e837d6-81df-4794-bec1-000b85e20853"/>
+        <file path="a505f630-c4d9-4d45-b34c-c06493b52190" id="61.11026d4e-44e8-4863-bc91-7d6f03fd66e5"/>
+        <file path="55316879-33ff-4860-9d3c-e353dd5d088a" id="61.47fdaf7b-f1c8-4079-9de2-85071e47da61"/>
+        <file path="e11beb3d-731c-429c-859f-9c2c5965332e" id="61.94792c72-b3ae-4fc5-a8cf-d3a503a92d18"/>
+        <file path="545b9ab9-ea63-4890-bf3c-754e9b1a948a" id="61.b7e837d6-81df-4794-bec1-000b85e20853"/>
     </files>
 </p:package>

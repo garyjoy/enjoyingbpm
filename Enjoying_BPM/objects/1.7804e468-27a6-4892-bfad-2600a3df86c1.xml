@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamworks>
+    <process id="1.7804e468-27a6-4892-bfad-2600a3df86c1" name="Get Comments for Instance">
+        <lastModified>1471374073159</lastModified>
+        <lastModifiedBy>admin</lastModifiedBy>
+        <processId>1.7804e468-27a6-4892-bfad-2600a3df86c1</processId>
+        <image isNull="true" />
+        <tabGroup isNull="true" />
+        <startingProcessItemId>2025.b12d977d-579e-4778-abee-8739fc17b4da</startingProcessItemId>
+        <isRootProcess>false</isRootProcess>
+        <processType>2</processType>
+        <isErrorHandlerEnabled>false</isErrorHandlerEnabled>
+        <errorHandlerItemId isNull="true" />
+        <isLoggingVariables>false</isLoggingVariables>
+        <isTransactional>false</isTransactional>
+        <processTimingLevel isNull="true" />
+        <participantRef isNull="true" />
+        <exposedType isNull="true" />
+        <isTrackingEnabled>true</isTrackingEnabled>
+        <xmlData isNull="true" />
+        <cachingType>false</cachingType>
+        <itemLabel isNull="true" />
+        <cacheLength>43200</cacheLength>
+        <mobileReady>false</mobileReady>
+        <sboSyncEnabled>false</sboSyncEnabled>
+        <externalId isNull="true" />
+        <isSecured>false</isSecured>
+        <description isNull="true" />
+        <guid>guid:8c014a1c4761158b:60028a2c:15694926854:-7fff</guid>
+        <versionId>aa21f8e0-b79d-4a9b-b546-ab03b7ef441c</versionId>
+        <dependencySummary isNull="true" />
+        <processParameter name="processInstanceId">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <processParameterId>2055.36fb6631-227b-4684-aee0-25e4d1bd2f63</processParameterId>
+            <processId>1.7804e468-27a6-4892-bfad-2600a3df86c1</processId>
+            <parameterType>1</parameterType>
+            <isArrayOf>false</isArrayOf>
+            <classId>8bbda71b-db08-4180-b26a-c8fecdf83b7e/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+            <seq>1</seq>
+            <hasDefault>true</hasDefault>
+            <defaultValue>"805"</defaultValue>
+            <isLocked>false</isLocked>
+            <description isNull="true" />
+            <guid>20906399-a724-403e-8226-ae92ebb5b8e0</guid>
+            <versionId>bd63f2cd-dba4-4702-aaf5-3f81972de20e</versionId>
+        </processParameter>
+        <processParameter name="comments">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <processParameterId>2055.d9564e3d-71b5-4829-90ac-05079c8fcb84</processParameterId>
+            <processId>1.7804e468-27a6-4892-bfad-2600a3df86c1</processId>
+            <parameterType>2</parameterType>
+            <isArrayOf>true</isArrayOf>
+            <classId>8bbda71b-db08-4180-b26a-c8fecdf83b7e/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+            <seq>2</seq>
+            <hasDefault>false</hasDefault>
+            <defaultValue isNull="true" />
+            <isLocked>false</isLocked>
+            <description isNull="true" />
+            <guid>2102939b-0bb2-4fa2-a3bc-cef6198dbae4</guid>
+            <versionId>1e09b417-5ba2-40e0-80b7-d5222dbb6291</versionId>
+        </processParameter>
+        <item>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <processItemId>2025.40ac6bde-4f25-4029-b798-3b60fdee1ebf</processItemId>
+            <processId>1.7804e468-27a6-4892-bfad-2600a3df86c1</processId>
+            <name>End</name>
+            <tWComponentName>ExitPoint</tWComponentName>
+            <tWComponentId>3008.f399e4d6-5306-4355-89c8-cfb1a37abba8</tWComponentId>
+            <isLogEnabled>false</isLogEnabled>
+            <isTraceEnabled>false</isTraceEnabled>
+            <traceCategory isNull="true" />
+            <traceLevel isNull="true" />
+            <traceMessage isNull="true" />
+            <traceSymbolTable isNull="true" />
+            <isExecutionContextTraced>false</isExecutionContextTraced>
+            <saveExecutionContext>true</saveExecutionContext>
+            <documentation isNull="true" />
+            <isErrorHandlerEnabled>false</isErrorHandlerEnabled>
+            <errorHandlerItemId isNull="true" />
+            <guid>guid:8c014a1c4761158b:60028a2c:15694926854:-7ffe</guid>
+            <versionId>8e1fdce7-1dfd-4c28-b182-a2893345fe54</versionId>
+            <layoutData x="700" y="99">
+                <errorLink>
+                    <controlPoints />
+                    <showEndState>false</showEndState>
+                    <showName>false</showName>
+                </errorLink>
+            </layoutData>
+            <TWComponent>
+                <lastModified isNull="true" />
+                <lastModifiedBy isNull="true" />
+                <exitPointId>3008.f399e4d6-5306-4355-89c8-cfb1a37abba8</exitPointId>
+                <haltProcess>false</haltProcess>
+                <guid>0d947dda-7690-48f4-8b34-37a1100701d3</guid>
+                <versionId>aed9fef2-546f-422f-b1b8-21a33d03640b</versionId>
+            </TWComponent>
+        </item>
+        <item>
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <processItemId>2025.b12d977d-579e-4778-abee-8739fc17b4da</processItemId>
+            <processId>1.7804e468-27a6-4892-bfad-2600a3df86c1</processId>
+            <name>Get Comments for Instance</name>
+            <tWComponentName>Script</tWComponentName>
+            <tWComponentId>3011.43f2e7fd-dd4f-48ce-a7d8-efda91b190bc</tWComponentId>
+            <isLogEnabled>false</isLogEnabled>
+            <isTraceEnabled>false</isTraceEnabled>
+            <traceCategory isNull="true" />
+            <traceLevel isNull="true" />
+            <traceMessage isNull="true" />
+            <traceSymbolTable isNull="true" />
+            <isExecutionContextTraced>false</isExecutionContextTraced>
+            <saveExecutionContext>false</saveExecutionContext>
+            <documentation isNull="true" />
+            <isErrorHandlerEnabled>false</isErrorHandlerEnabled>
+            <errorHandlerItemId isNull="true" />
+            <guid>guid:8c014a1c4761158b:60028a2c:15694926854:-7ffc</guid>
+            <versionId>faffc1f5-ad42-4132-b3b5-89edcc29fb75</versionId>
+            <layoutData x="340" y="84">
+                <errorLink>
+                    <controlPoints />
+                    <showEndState>false</showEndState>
+                    <showName>false</showName>
+                </errorLink>
+            </layoutData>
+            <TWComponent>
+                <lastModified isNull="true" />
+                <lastModifiedBy isNull="true" />
+                <scriptId>3011.43f2e7fd-dd4f-48ce-a7d8-efda91b190bc</scriptId>
+                <scriptTypeId>2</scriptTypeId>
+                <isActive>true</isActive>
+                <script>tw.local.comments = new tw.object.listOf.String();
+
+try {
+    var processInstance = tw.system.findProcessInstanceByID(tw.local.processInstanceId);
+    var tasks = processInstance.tasks;
+    
+    for (var loop = 0; loop &lt; tasks.length; ++loop) {
+        var task = tasks[loop];
+        if (task.status == null &amp;&amp; task.subject != null &amp;&amp; task.subject.substr(0, 7) == "Comment") {
+            var comment = task.owner + ": " + task.narrative;
+            tw.local.comments.insertIntoList(0, comment);
+        }
+    
+    }
+}
+catch(e) {}</script>
+                <isRule>false</isRule>
+                <guid>11f2dc84-a189-477c-9f0e-6b6dbdfd5a79</guid>
+                <versionId>87058e49-9426-4f3c-9e5a-ee34b21afc2e</versionId>
+            </TWComponent>
+        </item>
+        <startingProcessItemId>2025.b12d977d-579e-4778-abee-8739fc17b4da</startingProcessItemId>
+        <errorHandlerItemId isNull="true" />
+        <layoutData noConversion="true">
+            <errorLink>
+                <controlPoints />
+                <showEndState>false</showEndState>
+                <showName>false</showName>
+            </errorLink>
+        </layoutData>
+        <startPoint>
+            <layoutData x="20" y="100">
+                <errorLink>
+                    <controlPoints />
+                    <showEndState>false</showEndState>
+                    <showName>false</showName>
+                </errorLink>
+            </layoutData>
+        </startPoint>
+        <startLink>
+            <fromPort locationId="rightCenter" portType="1" />
+            <toPort locationId="leftCenter" portType="2" />
+            <layoutData>
+                <controlPoints />
+                <showEndState>false</showEndState>
+                <showName>false</showName>
+            </layoutData>
+        </startLink>
+        <link name="Untitled">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <processLinkId>2027.7a03ef5b-28bf-4d42-bef9-831f276da333</processLinkId>
+            <processId>1.7804e468-27a6-4892-bfad-2600a3df86c1</processId>
+            <description isNull="true" />
+            <fromProcessItemId>2025.b12d977d-579e-4778-abee-8739fc17b4da</fromProcessItemId>
+            <endStateId>Out</endStateId>
+            <toProcessItemId>2025.40ac6bde-4f25-4029-b798-3b60fdee1ebf</toProcessItemId>
+            <guid>0352c215-e5c2-47d9-be9c-4c5c167ba18d</guid>
+            <versionId>84bc2d57-eed9-4412-8993-dc0410ad10f8</versionId>
+            <layoutData>
+                <controlPoints />
+                <showEndState>false</showEndState>
+                <showName>false</showName>
+            </layoutData>
+            <fromItemPort locationId="rightCenter" portType="1" />
+            <toItemPort locationId="leftCenter" portType="2" />
+            <fromProcessItemId>2025.b12d977d-579e-4778-abee-8739fc17b4da</fromProcessItemId>
+            <toProcessItemId>2025.40ac6bde-4f25-4029-b798-3b60fdee1ebf</toProcessItemId>
+        </link>
+    </process>
+</teamworks>
+

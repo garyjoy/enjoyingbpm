@@ -1,0 +1,6 @@
+require({
+ paths: {
+ "jquery": "https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery",
+ "jqueryUI": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui"
+ }
+});
